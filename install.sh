@@ -17,8 +17,8 @@ done
 
 echo "------------------------------"
 
-# Read user choice
-read -p "Enter your choice: " choice
+# Read user choice from the terminal
+read -p "Enter your choice: " choice < /dev/tty
 
 # Find the script URL based on the choice number
 script_url=""
