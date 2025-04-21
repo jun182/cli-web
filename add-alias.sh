@@ -2,7 +2,7 @@
 
 # Define the alias name and the command
 ALIAS_NAME="johola-config"
-SCRIPT_URL="https://raw.githubusercontent.com/jun182/cli-web/main/install.sh"
+SCRIPT_COMMAND="curl -fsSL https://raw.githubusercontent.com/jun182/cli-web/main/install.sh | sudo sh"
 
 # Determine the shell configuration file
 if [ -n "$ZSH_VERSION" ]; then
@@ -15,5 +15,5 @@ else
 fi
 
 # Add the alias to the shell configuration file
-echo "alias $ALIAS_NAME='curl -s $SCRIPT_URL | bash'" >> "$SHELL_RC"
+echo "alias $ALIAS_NAME='$SCRIPT_COMMAND'" >> "$SHELL_RC"
 echo "Alias '$ALIAS_NAME' added to $SHELL_RC. Restart your terminal or run 'source $SHELL_RC' to apply."
