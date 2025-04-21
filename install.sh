@@ -3,10 +3,7 @@
 # --- Configuration ---
 # Define your menu options and the corresponding raw GitHub URLs for the scripts.
 # Format: "Menu Option Description": "Raw GitHub URL"
-declare -A scripts=(
-    # Corrected URL below - changed /blob/ to /main/ after awdl_disable/
-    ["1. Disable AWDL (Example)"]="https://raw.githubusercontent.com/jun182/awdl_disable/main/bin/awdl_disable.sh"
-)
+declare -A scripts=(["1. Disable AWDL (Example)"]="https://raw.githubusercontent.com/jun182/awdl_disable/main/bin/awdl_disable.sh")
 # ---------------------
 
 echo "Welcome to the Script Dispatcher!"
