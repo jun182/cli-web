@@ -6,8 +6,8 @@
 declare -A scripts=(
     ["1. Disable AWDL (Example)"]="https://raw.githubusercontent.com/jun182/awdl_disable/blob/main/bin/awdl_disable.sh"
     ["2. Run Another Script (Replace)"]="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_OTHER_REPO/main/another_script.sh" # <- Replace with your info
-    # Add more options here following the same pattern
-    # ["3. Install Docker"]="https://get.docker.com" # <- You could even link to other installers if they support this pattern
+# Add more options here following the same pattern
+# ["3. Install Docker"]="https://get.docker.com" # <- You could even link to other installers if they support this pattern
 )
 # ---------------------
 
