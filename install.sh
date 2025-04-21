@@ -1,8 +1,4 @@
 #!/bin/bash
-
-# --- Configuration ---
-# Define your menu options and the corresponding raw GitHub URLs for the scripts.
-# Format: "Menu Option Description": "Raw GitHub URL"
 declare -A scripts=(
     ["1. Disable AWDL (Example)"]="https://raw.githubusercontent.com/jun182/awdl_disable/main/bin/awdl_disable.sh"
     ["2. Run Another Script (Replace)"]="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_OTHER_REPO/main/another_script.sh" # <- Replace with your info
