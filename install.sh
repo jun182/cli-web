@@ -8,7 +8,7 @@ menu_options=(
 )
 script_urls=(
     "https://raw.githubusercontent.com/jun182/awdl_disable/main/bin/awdl_disable.sh"
-    "https://raw.githubusercontent.com/jun182/cli-web/main/install.sh"
+    "https://raw.githubusercontent.com/jun182/cli-web/main/add-alias.sh"
 )
 # ---------------------
 
