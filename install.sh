@@ -2,8 +2,14 @@
 
 # --- Configuration ---
 # Define your menu options and the corresponding raw GitHub URLs for the scripts.
-menu_options=("1. Disable AWDL (Example)")
-script_urls=("https://raw.githubusercontent.com/jun182/awdl_disable/main/bin/awdl_disable.sh")
+menu_options=(
+    "1. Disable AWDL (MacOS only)"
+    "2. Install CLI Web"
+)
+script_urls=(
+    "https://raw.githubusercontent.com/jun182/awdl_disable/main/bin/awdl_disable.sh"
+    "https://raw.githubusercontent.com/jun182/cli-web/main/install.sh"
+)
 # ---------------------
 
 echo "Welcome to the Script Dispatcher!"
