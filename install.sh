@@ -1,9 +1,11 @@
 #!/bin/bash
+
+# --- Configuration ---
+# Define your menu options and the corresponding raw GitHub URLs for the scripts.
+# Format: "Menu Option Description": "Raw GitHub URL"
 declare -A scripts=(
-["1. Disable AWDL (Example)"]="https://raw.githubusercontent.com/jun182/awdl_disable/main/bin/awdl_disable.sh"
-["2. Run Another Script (Replace)"]="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_OTHER_REPO/main/another_script.sh" # <- Replace with your info
-# Add more options here following the same pattern
-# ["3. Install Docker"]="https://get.docker.com" # <- You could even link to other installers if they support this pattern
+    # Corrected URL below - changed /blob/ to /main/ after awdl_disable/
+    ["1. Disable AWDL (Example)"]="https://raw.githubusercontent.com/jun182/awdl_disable/main/bin/awdl_disable.sh"
 )
 # ---------------------
 
@@ -26,6 +28,7 @@ script_url=""
 for option_text in "${!scripts[@]}"; do
     # Extract the number from the option text (e.g., "1." from "1. Disable AWDL")
     number=$(echo "$option_text" | cut -d'.' -f1)
+    # Use == for string comparison in [[ ... ]]
     if [[ "$number" == "$choice" ]]; then
         script_url="${scripts[$option_text]}"
         break
@@ -34,7 +37,9 @@ done
 
 # Execute the chosen script or show error
 if [[ -n "$script_url" ]]; then
-    echo "Downloading and running: $(echo "$option_text" | cut -d'.' -f2- | sed 's/^ //')" # Print description without number
+    # Extract description without number and leading space
+    description=$(echo "$option_text" | cut -d'.' -f2- | sed 's/^ //')
+    echo "Downloading and running: $description"
     echo "Fetching script from: $script_url"
     echo "--- Script Output Below ---"
 
